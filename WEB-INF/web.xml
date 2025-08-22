@@ -1,0 +1,17 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="3.1">
+  <servlet>
+    <servlet-name>TestChatGPT</servlet-name>
+    <!-- Adjust this class name if you change the package of your servlet -->
+    <servlet-class>github.TestChatGPT</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestChatGPT</servlet-name>
+    <!-- Map the servlet to /echo -->
+    <url-pattern>/echo</url-pattern>
+  </servlet-mapping>
+
+  <!-- Route the root path to the servlet (optional) -->
+  <welcome-file-list>
+    <welcome-file>echo</welcome-file>
+  </welcome-file-list>
+</web-app>
